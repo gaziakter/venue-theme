@@ -22,7 +22,7 @@
                         <button id="primary-nav-button" type="button">Menu</button>
                         <a class="flex" href="index.html">
                             <div class="logo">
-                                <img src="img/logo.png" alt="Venue Logo">
+                                <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/logo.png');?>" alt="Venue Logo">
                             </div>
                         </a>
                         <nav id="primary-nav" class="dropdown cf">
