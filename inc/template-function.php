@@ -11,3 +11,15 @@ function venue_show_header_logo(){
     <?php
     }
 }
+
+/** Main function */
+function venue_main_menu(){
+    wp_nav_menu(
+        array(
+            'theme_location'    => 'main-menu',
+            'menu_class' => 'dropdown menu',
+            'fallback_cb'       => 'Venue_Walker_Nav_Menu::fallcak',
+            'walker'            => new Venue_Walker_Nav_Menu
+        )
+    );
+}

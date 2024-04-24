@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
 
 	'use strict';
 
-        (function($) {
+        $(function() {
   
           // Vars
           var modBtn  = $('#modBtn'),

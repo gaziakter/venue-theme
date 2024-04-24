@@ -207,22 +207,38 @@ section {
 }
 
 .downarrow {
-    background: none;
-    display: inline-block;
-  padding: 0;
-    text-align: center;
-    min-width: 3px;
+position: relative;
 }
 
-.sub-menu .downarrow {
+/* .sub-menu .downarrow {
   position: absolute;
   right: 0;
   top: 12px;
   font-size: 18px;
   padding-right: 10px;
+} */
+
+.dropdown ul li.downarrow > a::after {
+  content: '\25be';
+  -webkit-transform: translateY(1px);
+  -moz-transform: translateY(1px);
+  -ms-transform: translateY(1px);
+  -o-transform: translateY(1px);
+  transform: translateY(1px);
+  font-size: 14px;
+  color: var(--tp-common-white);
+  font-family: var(--tp-ff-fontawesome);
+  font-weight: 400;
+  margin-left: 5px;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
 }
 
-.downarrow:before {
+/* .downarrow:before {
   content: '\25be';
   color: inherit;
   display: block;
@@ -230,7 +246,7 @@ section {
   line-height: 1.1;
   width: 1em;
   height: 1em;
-}
+} */
 
 .menu .sub-menu {
   display: none;
@@ -238,6 +254,11 @@ section {
   left: 0;
   max-height: 1000px;
 }
+
+li.menu-item-has-children:hover .sub-menu {
+  display: block;
+}
+
 
 .menu .sub-menu li {
   line-height: 40px;
