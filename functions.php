@@ -24,3 +24,10 @@ function venue_support(){
 }
 
 add_action( 'after_setup_theme', 'venue_support' );
+
+
+
+
+
+/** Include files */
+include_once('inc/common/scripts.php');
