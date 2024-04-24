@@ -5,7 +5,7 @@
                 <div class="about-veno">
                     <div class="logo">
                         <a href="index.html">
-                            <img src="img/footer_logo.png" alt="Venue Logo">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/footer_logo.png');?>" alt="Venue Logo">
                         </a>
                     </div>
                     <p>Mauris sit amet quam congue, pulvinar urna et, congue diam. Suspendisse eu lorem massa. Integer

@@ -1,6 +1,6 @@
     
 <?php get_header(); ?>
-    
+
     <section class="banner" id="top">
         <div class="container">
             <div class="row">
@@ -66,7 +66,7 @@
             <div class="owl-carousel owl-theme">
                 <div class="item popular-item">
                     <div class="thumb">
-                        <img src="img/popular_item_1.jpg" alt="">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/popular_item_1.jpg');?>" alt="">
                         <div class="text-content">
                             <h4>Mauris tempus</h4>
                             <span>76 listings</span>
@@ -78,7 +78,7 @@
                 </div>
                 <div class="item popular-item">
                     <div class="thumb">
-                        <img src="img/popular_item_2.jpg" alt="">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/popular_item_2.jpg');?>" alt="">
                         <div class="text-content">
                             <h4>Aenean dolor</h4>
                             <span>18 listings</span>
@@ -90,7 +90,7 @@
                 </div>
                 <div class="item popular-item">
                     <div class="thumb">
-                        <img src="img/popular_item_3.jpg" alt="">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/popular_item_3.jpg');?>" alt="">
                         <div class="text-content">
                             <h4>Nunc at quam</h4>
                             <span>55 listings</span>
@@ -102,7 +102,7 @@
                 </div>
                 <div class="item popular-item">
                     <div class="thumb">
-                        <img src="img/popular_item_4.jpg" alt="">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/popular_item_4.jpg');?>" alt="">
                         <div class="text-content">
                             <h4>Fusce ac turpis</h4>
                             <span>66 listings</span>
@@ -114,7 +114,7 @@
                 </div>
                 <div class="item popular-item">
                     <div class="thumb">
-                        <img src="img/popular_item_5.jpg" alt="">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/popular_item_5.jpg');?>" alt="">
                         <div class="text-content">
                             <h4>Lorem ipsum</h4>
                             <span>82 listings</span>
@@ -126,7 +126,7 @@
                 </div>
                 <div class="item popular-item">
                     <div class="thumb">
-                        <img src="img/popular_item_1.jpg" alt="">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/popular_item_1.jpg');?>" alt="">
                         <div class="text-content">
                             <h4>Praesent nec</h4>
                             <span>76 listings</span>
@@ -138,7 +138,7 @@
                 </div>
                 <div class="item popular-item">
                     <div class="thumb">
-                        <img src="img/popular_item_2.jpg" alt="">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/popular_item_2.jpg');?>" alt="">
                         <div class="text-content">
                             <h4>Suspendisse</h4>
                             <span>36 listings</span>
@@ -150,7 +150,7 @@
                 </div>
                 <div class="item popular-item">
                     <div class="thumb">
-                        <img src="img/popular_item_3.jpg" alt="">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/popular_item_3.jpg');?>" alt="">
                         <div class="text-content">
                             <h4>Bibendum</h4>
                             <span>48 listings</span>
@@ -162,7 +162,7 @@
                 </div>
                 <div class="item popular-item">
                     <div class="thumb">
-                        <img src="img/popular_item_4.jpg" alt="">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/popular_item_4.jpg');?>" alt="">
                         <div class="text-content">
                             <h4>Quisque sodales</h4>
                             <span>66 listings</span>
@@ -174,7 +174,7 @@
                 </div>
                 <div class="item popular-item">
                     <div class="thumb">
-                        <img src="img/popular_item_5.jpg" alt="">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/popular_item_5.jpg');?>" alt="">
                         <div class="text-content">
                             <h4>Pellentesque</h4>
                             <span>85 listings</span>
@@ -186,7 +186,7 @@
                 </div>
                 <div class="item popular-item">
                     <div class="thumb">
-                        <img src="img/popular_item_1.jpg" alt="">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/popular_item_1.jpg');?>" alt="">
                         <div class="text-content">
                             <h4>Commodo</h4>
                             <span>76 listings</span>
@@ -198,7 +198,7 @@
                 </div>
                 <div class="item popular-item">
                     <div class="thumb">
-                        <img src="img/popular_item_2.jpg" alt="">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/popular_item_2.jpg');?>" alt="">
                         <div class="text-content">
                             <h4>Adipiscing</h4>
                             <span>32 listings</span>
@@ -210,7 +210,7 @@
                 </div>
                 <div class="item popular-item">
                     <div class="thumb">
-                        <img src="img/popular_item_3.jpg" alt="">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/popular_item_3.jpg');?>" alt="">
                         <div class="text-content">
                             <h4>Etiam hendrerit</h4>
                             <span>49 listings</span>
@@ -222,7 +222,7 @@
                 </div>
                 <div class="item popular-item">
                     <div class="thumb">
-                        <img src="img/popular_item_4.jpg" alt="">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/popular_item_4.jpg');?>" alt="">
                         <div class="text-content">
                             <h4>Suspendisse</h4>
                             <span>63 listings</span>
@@ -234,7 +234,7 @@
                 </div>
                 <div class="item popular-item">
                     <div class="thumb">
-                        <img src="img/popular_item_5.jpg" alt="">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/popular_item_5.jpg');?>" alt="">
                         <div class="text-content">
                             <h4>Sit amet dictum</h4>
                             <span>86 listings</span>
@@ -264,7 +264,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="featured-item">
                         <div class="thumb">
-                            <img src="img/featured_item_1.jpg" alt="">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/featured_item_1.jpg');?>" alt="">
                             <div class="overlay-content">
                                 <ul>
                                     <li><i class="fa fa-star"></i></li>
@@ -301,7 +301,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="featured-item">
                         <div class="thumb">
-                            <img src="img/featured_item_2.jpg" alt="">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/featured_item_2.jpg');?>" alt="">
                             <div class="overlay-content">
                                 <ul>
                                     <li><i class="fa fa-star"></i></li>
@@ -338,7 +338,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="featured-item">
                         <div class="thumb">
-                            <img src="img/featured_item_3.jpg" alt="">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/featured_item_3.jpg');?>" alt="">
                             <div class="overlay-content">
                                 <ul>
                                     <li><i class="fa fa-star"></i></li>
@@ -392,7 +392,7 @@
                 <div class="col-md-4">
                     <div class="service-item">
                         <div class="icon">
-                            <img src="img/service_icon_1.png" alt="">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/service_icon_1.png');?>" alt="">
                         </div>
                         <h4>High Quality Design</h4>
                         <p>Etiam viverra nibh at lorem hendrerit porta non nec ligula. Donec hendrerit porttitor pretium. Suspendisse fermentum nec risus.</p>
@@ -401,7 +401,7 @@
                 <div class="col-md-4">
                     <div class="service-item">
                         <div class="icon">
-                            <img src="img/service_icon_2.png" alt="">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/service_icon_2.png');?>" alt="">
                         </div>
                         <h4>Fully Customizable</h4>
                         <p>Vivamus nec vehicula felis, sit amet convallis ex. Aenean dolor risus, rutrum at tincidunt eget, placerat ac mauris.</p>
@@ -410,7 +410,7 @@
                 <div class="col-md-4">
                     <div class="service-item">
                         <div class="icon">
-                            <img src="img/service_icon_3.png" alt="">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/service_icon_3.png');?>" alt="">
                         </div>
                         <h4>Best HTML CSS Layout</h4>
                         <p>Praesent nec dui sed urna pharetra dapibus at ac elit. Aenean hendrerit metus leo, quis viverra purus condimentum nec.</p>
@@ -467,7 +467,7 @@
             </div>
         </div>
         <video autoplay="" loop="" muted>
-        	<source src="highway-loop.mp4" type="video/mp4" />
+        	<source src="<?php echo esc_url(get_template_directory_uri() . '/assets/video/highway-loop.mp4');?>" type="video/mp4" />
         </video>
     </section>
 
