@@ -9,11 +9,7 @@
                         <?php venue_show_footer_text(); ?>
                     <ul class="social-icons">
                         <li>
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                            <a href="#"><i class="fa fa-rss"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <?php venue_social_icon(); ?>
                         </li>
                     </ul>
                 </div>

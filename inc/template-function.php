@@ -47,3 +47,31 @@ function venue_show_footer_text(){
     }
 }
 
+/** Venue social function */
+function venue_social_icon(){
+
+    $venue_facebook = get_theme_mod('venue_facebook', __('#', 'venue'));
+    $venue_twitter = get_theme_mod('venue_twitter', __('#', 'venue'));
+    $venue_linkedin = get_theme_mod('venue_linkedin', __('#', 'venue'));
+    $venue_rss = get_theme_mod('venue_rss', __('#', 'venue'));
+    $venue_dribbble = get_theme_mod('venue_dribbble', __('#', 'venue'));
+    ?>
+
+    <?php if (!empty($venue_facebook)) : ?>
+        <a target="_blank" href="<?php echo esc_url($venue_facebook); ?>"><i class="fa fa-facebook"></i></a>
+    <?php endif; ?>
+    <?php if (!empty($venue_twitter)) : ?>
+        <a target="_blank" href="<?php echo esc_url($venue_twitter); ?>"><i class="fa fa-twitter"></i></a>
+    <?php endif; ?>
+    <?php if (!empty($venue_linkedin)) : ?>
+        <a target="_blank" href="<?php echo esc_url($venue_linkedin); ?>"><i class="fa fa-linkedin"></i></a>
+    <?php endif; ?>
+    <?php if (!empty($venue_rss)) : ?>
+        <a target="_blank" href="<?php echo esc_url($venue_rss); ?>"><i class="fa fa-rss"></i></a>
+    <?php endif; ?>
+    <?php if (!empty($venue_dribbble)) : ?>
+        <a target="_blank" href="<?php echo esc_url($venue_dribbble); ?>"><i class="fa fa-dribbble"></i></a>
+    <?php endif; ?>
+
+<?php     
+}

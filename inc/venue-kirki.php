@@ -9,7 +9,7 @@ new \Kirki\Panel(
 	]
 );
 
-/** Header and Footer logo sitting */
+/** Header logo section */
 function venue_header_logo(){
     new \Kirki\Section(
         'venue_header_logo',
@@ -67,3 +67,68 @@ function venue_footer_about(){
 
 }
 venue_footer_about();
+
+
+/** Footer social setion */
+function venue_footer_social(){
+    new \Kirki\Section(
+        'venue_footer_section',
+        [
+            'title'       => esc_html__( 'Footer Social Section', 'venue' ),
+            'description' => esc_html__( 'Footer social link section', 'venue' ),
+            'panel'       => 'venue_pannel',
+            'priority'    => 160,
+        ]
+    );
+
+    new \Kirki\Field\Text(
+        [
+            'settings' => 'venue_facebook',
+            'label'    => esc_html__( 'Facebook URL', 'venue' ),
+            'section'  => 'venue_footer_section',
+            'default'  => esc_html__( '#', 'venue' ),
+            'priority' => 10,
+        ]
+    );
+
+    new \Kirki\Field\Text(
+        [
+            'settings' => 'venue_twitter',
+            'label'    => esc_html__( 'Twitter URL', 'venue' ),
+            'section'  => 'venue_footer_section',
+            'default'  => esc_html__( '#', 'venue' ),
+            'priority' => 10,
+        ]
+    );
+
+    new \Kirki\Field\Text(
+        [
+            'settings' => 'venue_linkedin',
+            'label'    => esc_html__( 'Linkedin URL', 'venue' ),
+            'section'  => 'venue_footer_section',
+            'default'  => esc_html__( '#', 'venue' ),
+            'priority' => 10,
+        ]
+    );
+
+    new \Kirki\Field\Text(
+        [
+            'settings' => 'venue_rss',
+            'label'    => esc_html__( 'RSS URL', 'venue' ),
+            'section'  => 'venue_footer_section',
+            'default'  => esc_html__( '#', 'venue' ),
+            'priority' => 10,
+        ]
+    );
+
+    new \Kirki\Field\Text(
+        [
+            'settings' => 'venue_dribbble',
+            'label'    => esc_html__( 'Dribble URL', 'venue' ),
+            'section'  => 'venue_footer_section',
+            'default'  => esc_html__( '#', 'venue' ),
+            'priority' => 10,
+        ]
+    );
+}
+venue_footer_social();
