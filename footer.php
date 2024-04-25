@@ -43,9 +43,7 @@
 </footer>
 
 <div class="sub-footer">
-    <p>Copyright &copy; 2018 Company Name
-
-        - Design: <a rel="nofollow" href="http://www.templatemo.com">Template Mo</a></p>
+    <?php venue_footer_copyright_show(); ?>
 </div>
 
 <?php wp_footer(); ?>

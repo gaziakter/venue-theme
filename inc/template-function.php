@@ -24,7 +24,7 @@ function venue_main_menu(){
     );
 }
 
-/** footer function */
+/** footer menu function */
 function venue_footer_menu(){
     wp_nav_menu(
         array(
@@ -119,4 +119,16 @@ function footer_contact_info(){
     <?php endif; ?>
 
     <?php
+}
+
+
+/** Footer copyright text */
+function venue_footer_copyright_show(){
+
+    $venue_footer_copyright = get_theme_mod('venue_copyright', __('Copyright © 2018 Company Name - Design: Template Mo', 'venue'));
+
+    if (!empty($venue_footer_copyright)) { ?>
+        <p><?php echo wp_kses_post($venue_footer_copyright); ?></p>
+    <?php
+    }
 }

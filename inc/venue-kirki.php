@@ -186,3 +186,35 @@ function venue_footer_contact_section(){
 
 }
 venue_footer_contact_section();
+
+
+
+
+
+
+
+
+
+/** Footer copyright section */
+function venue_footer_copyright(){
+    new \Kirki\Section(
+        'venue_footer_copyright',
+        [
+            'title'       => esc_html__( 'Footer Copyright Section', 'venue' ),
+            'description' => esc_html__( 'Footer copyright content', 'venue' ),
+            'panel'       => 'venue_pannel',
+            'priority'    => 160,
+        ]
+    );
+
+    new \Kirki\Field\Text(
+        [
+            'settings' => 'venue_copyright',
+            'label'    => esc_html__( 'Copyright Text', 'venue' ),
+            'section'  => 'venue_footer_copyright',
+            'default'  => esc_html__( 'Copyright © 2018 Company Name - Design: Template Mo', 'venue' ),
+            'priority' => 10,
+        ]
+    );
+}
+venue_footer_copyright();
