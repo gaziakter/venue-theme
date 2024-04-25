@@ -21,14 +21,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-stop"></i>Help FAQs</a></li>
-                                <li><a href="#"><i class="fa fa-stop"></i>Register</a></li>
-                                <li><a href="#"><i class="fa fa-stop"></i>Login</a></li>
-                                <li><a href="#"><i class="fa fa-stop"></i>My Profile</a></li>
-                                <li><a href="#"><i class="fa fa-stop"></i>How It Works?</a></li>
-                                <li><a href="#"><i class="fa fa-stop"></i>More About Us</a></li>
-                            </ul>
+                            <?php venue_footer_menu(); ?>
                         </div>
 
                     </div>

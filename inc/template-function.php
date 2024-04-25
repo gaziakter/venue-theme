@@ -24,6 +24,19 @@ function venue_main_menu(){
     );
 }
 
+/** footer function */
+function venue_footer_menu(){
+    wp_nav_menu(
+        array(
+            'theme_location'    => 'footer-menu',
+            'container' => false, // Disable the menu container
+            'menu_class' => 'menu', // Add a class to the <ul> element
+            'items_wrap' => '<ul>%3$s</ul>', // Customize the markup for <ul>
+            'link_before' => '<i class="fa fa-stop"></i>', // Add font awesome icon before the link text
+        )
+    );
+}
+
 /** Footer Logo function */
 function venue_show_footer_logo(){
 
