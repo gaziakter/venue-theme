@@ -4,12 +4,9 @@
             <div class="col-md-5">
                 <div class="about-veno">
                     <div class="logo">
-                        <a href="index.html">
-                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/footer_logo.png');?>" alt="Venue Logo">
-                        </a>
+                        <?php venue_show_footer_logo(); ?>
                     </div>
-                    <p>Mauris sit amet quam congue, pulvinar urna et, congue diam. Suspendisse eu lorem massa. Integer
-                        sit amet posuere tellus, id efficitur leo. In hac habitasse platea dictumst.</p>
+                        <?php venue_show_footer_text(); ?>
                     <ul class="social-icons">
                         <li>
                             <a href="#"><i class="fa fa-facebook"></i></a>
