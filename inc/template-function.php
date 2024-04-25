@@ -75,3 +75,35 @@ function venue_social_icon(){
 
 <?php     
 }
+
+/** Footer contact text */
+function footer_contact_text(){
+
+    $footer_contact_text = get_theme_mod('footer_contct_text', __('Praesent iaculis gravida elementum. Proin fermentum neque facilisis semper pharetra. Sed vestibulum vehicula tincidunt.', 'venue'));
+
+    if (!empty($footer_contact_text)) { ?>
+        <p><?php echo esc_html($footer_contact_text); ?></p>
+    <?php
+    }
+}
+
+/** Footer contact info */
+function footer_contact_info(){
+
+    $venue_footer_phone = get_theme_mod('venue_footer_phone', __('010-050-0550', 'venue'));
+    $venue_footer_email = get_theme_mod('venue_footer_email', __('hi@company.co', 'venue'));
+    $venue_footer_address = get_theme_mod('venue_footer_address', __('company.co', 'venue'));
+    ?>
+
+    <?php if (!empty($venue_footer_phone)) : ?>
+        <li><span>Phone:</span><a href="tel:<?php echo esc_url($venue_footer_phone); ?>"><?php echo esc_html($venue_footer_phone); ?></a></li>
+    <?php endif; ?>
+    <?php if (!empty($venue_footer_email)) : ?>
+        <li><span>Email:</span><a href="mailto:<?php echo esc_url($venue_footer_email); ?>"><?php echo esc_html($venue_footer_email); ?></a></li>
+    <?php endif; ?>
+    <?php if (!empty($venue_footer_address)) : ?>
+        <li><span>Address:</span><a target="_blank" href="<?php echo esc_url($venue_footer_address); ?>"><?php echo esc_html($venue_footer_address); ?></a></li>
+    <?php endif; ?>
+
+    <?php
+}

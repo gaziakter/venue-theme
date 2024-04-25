@@ -39,12 +39,9 @@
                     <div class="footer-heading">
                         <h4>Contact Information</h4>
                     </div>
-                    <p>Praesent iaculis gravida elementum. Proin fermentum neque facilisis semper pharetra. Sed
-                        vestibulum vehicula tincidunt.</p>
+                    <?php footer_contact_text(); ?>
                     <ul>
-                        <li><span>Phone:</span><a href="#">010-050-0550</a></li>
-                        <li><span>Email:</span><a href="#">hi@company.co</a></li>
-                        <li><span>Address:</span><a href="#">company.co</a></li>
+                        <?php footer_contact_info(); ?>
                     </ul>
                 </div>
             </div>
